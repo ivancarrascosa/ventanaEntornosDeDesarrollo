@@ -4,6 +4,8 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JTextField;
+import javax.swing.text.html.CSS;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.JTextArea;
@@ -16,6 +18,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.UIManager;
 
 public class Principal {
 
@@ -98,6 +101,9 @@ public class Principal {
 		frame.getContentPane().add(txtrIdioma);
 		
 		choice = new Choice();
+		choice.setFont(new Font("Arial", Font.PLAIN, 12));
+		choice.setBackground(Color.LIGHT_GRAY);
+		choice.setForeground(Color.BLACK);
 		choice.setBounds(234, 112, 86, 20);
 		frame.getContentPane().add(choice);
 		
@@ -108,9 +114,9 @@ public class Principal {
 		txtrComunicacin.setBounds(107, 143, 106, 22);
 		frame.getContentPane().add(txtrComunicacin);
 		
-		JRadioButton rdbtnNewRadioButton = new JRadioButton("Teléfono");
-		rdbtnNewRadioButton.setBounds(234, 143, 109, 23);
-		frame.getContentPane().add(rdbtnNewRadioButton);
+		JRadioButton rdbtntlf = new JRadioButton("Teléfono");
+		rdbtntlf.setBounds(234, 143, 109, 23);
+		frame.getContentPane().add(rdbtntlf);
 		
 		JRadioButton rdbtnEmail = new JRadioButton("e-mail");
 		rdbtnEmail.setBounds(234, 169, 109, 23);
